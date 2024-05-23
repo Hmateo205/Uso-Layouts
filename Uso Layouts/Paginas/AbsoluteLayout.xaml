@@ -2,11 +2,37 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Uso_Layouts.Paginas.AbsoluteLayout"
-             Title="AbsoluteLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Estas en AbsoluteLayout"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="AbsoluteLayout"
+             Background="Beige">
+    
+
+    <ScrollView VerticalOptions="FillAndExpand" Orientation="Vertical">
+        <AbsoluteLayout>
+            <BoxView Color="GreenYellow"
+             AbsoluteLayout.LayoutBounds="0.5,0,100,25"
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="Green"
+             AbsoluteLayout.LayoutBounds="0,0.5,25,100"
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="ForestGreen"
+             AbsoluteLayout.LayoutBounds="1,0.5,25,100"
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="DarkGreen"
+             AbsoluteLayout.LayoutBounds="0.5,1,100,25"
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <Label Text="Absolute Layout"
+           AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+           AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+            <Button Text="Inicio"
+            Clicked="OnButtonClicked"
+            BackgroundColor="Black"
+            AbsoluteLayout.LayoutBounds="1,1,100,50"
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
+        </AbsoluteLayout>
+
+    </ScrollView>
+
+
+
 </ContentPage>
