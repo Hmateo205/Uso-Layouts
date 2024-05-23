@@ -65,8 +65,7 @@
             HorizontalOptions="Center"
             VerticalOptions="Center" />
      
-        
-        
+                
         <Label Grid.Row="3"
             Grid.Column="0"
             Text="Beige"
@@ -79,6 +78,20 @@
             TextColor="Black"
             HorizontalOptions="Center"
             VerticalOptions="Center" />
+
+
+        <Button 
+        x:Name="StackLayout"
+        Text="StackLayout ==>"
+        TextColor="White"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Clicked="OnStackLayoutClicked"
+        BackgroundColor="Black"
+        Grid.Row="4"
+        Grid.Column="1"/>
+
+
 
     </Grid>
 

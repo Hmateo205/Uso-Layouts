@@ -21,5 +21,10 @@ namespace Uso_Layouts
         {
             Navigation.PushAsync(new Paginas.GridLayout());
         }
+
+        private void OnBoton3Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Paginas.StackLayout());
+        }
     }
 }

@@ -36,6 +36,17 @@
             TextColor="Black"
             BackgroundColor="Beige"/>
 
+        <!-- Botón StackLayout -->
+        <Button
+            x:Name="Boton3"
+            Text="StackLayout" 
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnBoton3Clicked"
+            HorizontalOptions="Fill" 
+            TextColor="Black"
+            BackgroundColor="Beige"/>
+
+
         <!-- Imagen -->
         <Image
             Source="dotnet_bot.png"
