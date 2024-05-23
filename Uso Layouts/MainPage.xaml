@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Uso_Layouts.MainPage">
+             x:Class="Uso_Layouts.MainPage"
+             BackgroundColor="DarkOliveGreen">
+             
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
         <!-- Texto de bienvenida -->
-        <Label Text="¡Bienvenido a tu aplicación .NET MAUI!"
+        <Label Text="¡Bienvenido a mi aplicación .NET MAUI!"
                FontSize="24"
                HorizontalOptions="Center" />
 
@@ -22,7 +24,9 @@
 
         <Button Text="Incrementar contador" 
                 Clicked="OnCounterButtonClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                TextColor="Black"
+                BackgroundColor="Beige"/>
 
         <!-- Botón adicional -->
         <Button
@@ -30,7 +34,9 @@
             Text="Grid Layout ->" 
             SemanticProperties.Hint="Counts the number of times you click"
             Clicked="OnCounterClicked"
-            HorizontalOptions="Fill" />
+            HorizontalOptions="Fill" 
+            TextColor="Black"
+            BackgroundColor="Beige"/>
     </StackLayout>
 
 </ContentPage>

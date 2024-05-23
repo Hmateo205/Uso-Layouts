@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:Uso_Layouts"
     Shell.FlyoutBehavior="Disabled"
     Title="Uso_Layouts">
+    
 
     <ShellContent
         Title="Hernan Jurado"
