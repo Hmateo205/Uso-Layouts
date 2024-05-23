@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Uso_Layouts.Paginas.GridLayout"
              Title="GridLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Estas en GridLayout"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    
+    
+    
+    
 </ContentPage>

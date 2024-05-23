@@ -1,9 +1,19 @@
+using System.Diagnostics.Metrics;
+
 namespace Uso_Layouts.Paginas;
 
 public partial class Contador : ContentPage
 {
-	public Contador()
+    private int _counter = 0;
+
+    public Contador()
 	{
 		InitializeComponent();
 	}
+
+    private void OnCounterButtonClicked(object sender, EventArgs e)
+    {
+        _counter++;
+        CounterLabel.Text = $"El botón contador ha sido presionado {_counter} veces";
+    }
 }

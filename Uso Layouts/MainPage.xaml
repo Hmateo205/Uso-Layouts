@@ -16,28 +16,26 @@
                FontSize="20"
                HorizontalOptions="Center" />
 
-        <!-- Contador y botón -->
-        <Label x:Name="CounterLabel" 
-               Text="Botón contador"
-               FontSize="18"
-               HorizontalOptions="Center" />
-
-        <Button Text="Incrementar contador" 
-                Clicked="OnCounterButtonClicked"
-                HorizontalOptions="Center" 
-                TextColor="Black"
-                BackgroundColor="Beige"/>
-
-        <!-- Botón adicional -->
+        <!-- Botón Contador -->
         <Button
             x:Name="CounterBtn"
-            Text="Siguiente -->" 
+            Text="Contador" 
             SemanticProperties.Hint="Counts the number of times you click"
             Clicked="OnCounterClicked"
             HorizontalOptions="Fill" 
             TextColor="Black"
             BackgroundColor="Beige"/>
-            
+        <!-- Botón GridLayout -->
+        <Button
+            x:Name="CounterBtn"
+            Text="GridLayout" 
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnCounterClicked"
+            HorizontalOptions="Fill" 
+            TextColor="Black"
+            BackgroundColor="Beige"/>
+
+        <!-- Imagen -->
         <Image
             Source="dotnet_bot.png"
             HeightRequest="185"

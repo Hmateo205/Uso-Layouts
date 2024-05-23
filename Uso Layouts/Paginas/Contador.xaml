@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Uso_Layouts.Paginas.Contador"
              Title="Contador">
-    <VerticalStackLayout>
-        <Label 
-            Text="Estas en el contador de clicks"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    
+    <!-- Contador y botón -->
+    <Label x:Name="CounterLabel" 
+               Text="Botón contador"
+               FontSize="18"
+               HorizontalOptions="Center" />
+
+    <Button Text="Incrementar contador" 
+                Clicked="OnCounterButtonClicked"
+                HorizontalOptions="Center" 
+                TextColor="Black"
+                BackgroundColor="Beige"/>
+    
+    
 </ContentPage>
