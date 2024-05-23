@@ -12,12 +12,12 @@ namespace Uso_Layouts
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnBoton1Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Paginas.Contador());
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnBoton2Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Paginas.GridLayout());
         }

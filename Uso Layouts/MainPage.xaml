@@ -18,19 +18,20 @@
 
         <!-- Botón Contador -->
         <Button
-            x:Name="CounterBtn"
+            x:Name="Boton1"
             Text="Contador" 
             SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnCounterClicked"
+            Clicked="OnBoton1Clicked"
             HorizontalOptions="Fill" 
             TextColor="Black"
             BackgroundColor="Beige"/>
+        
         <!-- Botón GridLayout -->
         <Button
-            x:Name="CounterBtn"
+            x:Name="Boton2"
             Text="GridLayout" 
             SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnCounterClicked"
+            Clicked="OnBoton2Clicked"
             HorizontalOptions="Fill" 
             TextColor="Black"
             BackgroundColor="Beige"/>
