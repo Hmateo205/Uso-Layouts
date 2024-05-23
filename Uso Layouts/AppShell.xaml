@@ -8,7 +8,7 @@
     Title="Uso_Layouts">
 
     <ShellContent
-        Title="Home"
+        Title="Hernan Jurado"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

@@ -1,25 +1,29 @@
-﻿namespace Uso_Layouts
+﻿using System;
+using Microsoft.Maui.Controls;
+
+namespace Uso_Layouts
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private int _counter = 0;
 
         public MainPage()
         {
             InitializeComponent();
         }
 
+        private void OnCounterButtonClicked(object sender, EventArgs e)
+        {
+            _counter++;
+            CounterLabel.Text = $"El botón contador ha sido presionado {_counter} veces";
+        }
+
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            // Incrementa el contador si es necesario o navega a una nueva página de Grid Layout
+            _counter++;
+            CounterLabel.Text = $"El botón contador ha sido presionado {_counter} veces";
+            // Navegar a una nueva página de Grid Layout si está disponible
         }
     }
-
 }

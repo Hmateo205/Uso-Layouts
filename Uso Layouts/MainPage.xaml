@@ -3,5 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Uso_Layouts.MainPage">
 
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+        <!-- Texto de bienvenida -->
+        <Label Text="¡Bienvenido a tu aplicación .NET MAUI!"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <!-- Texto adicional -->
+        <Label Text="Esta aplicación es de layouts"
+               FontSize="20"
+               HorizontalOptions="Center" />
+
+        <!-- Contador y botón -->
+        <Label x:Name="CounterLabel" 
+               Text="Botón contador"
+               FontSize="18"
+               HorizontalOptions="Center" />
+
+        <Button Text="Incrementar contador" 
+                Clicked="OnCounterButtonClicked"
+                HorizontalOptions="Center" />
+
+        <!-- Botón adicional -->
+        <Button
+            x:Name="CounterBtn"
+            Text="Grid Layout ->" 
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnCounterClicked"
+            HorizontalOptions="Fill" />
+    </StackLayout>
 
 </ContentPage>
