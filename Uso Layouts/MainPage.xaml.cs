@@ -26,5 +26,10 @@ namespace Uso_Layouts
         {
             Navigation.PushAsync(new Paginas.StackLayout());
         }
+
+        private void OnBoton4Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Paginas.FlexLayout());
+        }
     }
 }
