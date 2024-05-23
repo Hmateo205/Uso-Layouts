@@ -4,8 +4,83 @@
              x:Class="Uso_Layouts.Paginas.GridLayout"
              Title="GridLayout">
 
-    
-    
-    
-    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <BoxView 
+            Grid.Row="0"
+            Grid.Column="0" 
+            Color="Lime" />
+
+        <BoxView 
+            Grid.Row="0"
+            Grid.Column="1"
+            Color="Green" />
+
+        <BoxView 
+            Grid.Row="1"
+            Grid.Column="0"
+            Color="DarkGreen" />
+
+        <BoxView 
+            Grid.Row="1"
+            Grid.Column="1"
+            Color="DarkSeaGreen" />
+
+        <BoxView
+            Grid.Row="3"
+            Grid.Column="0"
+            Color="Beige" />
+
+        <BoxView
+            Grid.Row="3"
+            Grid.Column="1"
+            Color="Beige" />
+
+       
+        <Label Text="Lime"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+        
+        <Label Grid.Column="1"
+            Text="Greem"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+        
+        <Label Grid.Row="1"
+            Text="DarkGreen"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+        
+        <Label Grid.Row="1"
+            Grid.Column="1"
+            Text="DarkSeaGreen"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+     
+        
+        
+        <Label Grid.Row="3"
+            Grid.Column="0"
+            Text="Beige"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+        <Label Grid.Row="3"
+            Grid.Column="1"
+            Text="Beige"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+
+    </Grid>
+
+
 </ContentPage>
