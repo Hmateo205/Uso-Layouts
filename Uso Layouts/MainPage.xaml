@@ -31,12 +31,20 @@
         <!-- Botón adicional -->
         <Button
             x:Name="CounterBtn"
-            Text="Grid Layout ->" 
+            Text="Siguiente -->" 
             SemanticProperties.Hint="Counts the number of times you click"
             Clicked="OnCounterClicked"
             HorizontalOptions="Fill" 
             TextColor="Black"
             BackgroundColor="Beige"/>
+            
+        <Image
+            Source="dotnet_bot.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+            
+   
     </StackLayout>
 
 </ContentPage>
