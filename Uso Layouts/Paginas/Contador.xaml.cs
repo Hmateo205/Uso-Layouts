@@ -11,9 +11,10 @@ public partial class Contador : ContentPage
 		InitializeComponent();
 	}
 
-    private void OnCounterButtonClicked(object sender, EventArgs e)
+    private void OnIncrementCounterButtonClicked(object sender, EventArgs e)
     {
         _counter++;
         CounterLabel.Text = $"El botón contador ha sido presionado {_counter} veces";
     }
+
 }

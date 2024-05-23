@@ -3,19 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Uso_Layouts.Paginas.Contador"
              Title="Contador">
-    
-    
-    <!-- Contador y botón -->
-    <Label x:Name="CounterLabel" 
-               Text="Botón contador"
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+        <!-- Contador y botón -->
+        <Label x:Name="CounterLabel" 
+               Text="El botón contador no ha sido presionado aún"
                FontSize="18"
+               TextColor="White"
                HorizontalOptions="Center" />
 
-    <Button Text="Incrementar contador" 
-                Clicked="OnCounterButtonClicked"
-                HorizontalOptions="Center" 
-                TextColor="Black"
-                BackgroundColor="Beige"/>
-    
-    
+        <Button
+            x:Name="IncrementCounterButton"
+            Text="Incrementar contador" 
+            Clicked="OnIncrementCounterButtonClicked"
+            HorizontalOptions="Fill" 
+            TextColor="Black"
+            BackgroundColor="Beige" />
+    </StackLayout>
+
 </ContentPage>
