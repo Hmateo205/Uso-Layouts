@@ -24,6 +24,15 @@
             <BoxView Color="DarkGreen"
          HeightRequest="40" />
            
+        <Button 
+            x:Name="FlexLayout"
+            Text="FlexLayout ==>"
+            TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="OnFlexLayoutClicked"
+            BackgroundColor="Black"/>
+
         </StackLayout>
     </ScrollView>
 
