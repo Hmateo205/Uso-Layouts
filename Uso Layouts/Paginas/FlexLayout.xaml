@@ -5,7 +5,7 @@
              Title="FlexLayout">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Estas en FlexLayput"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
