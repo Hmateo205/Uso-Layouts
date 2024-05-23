@@ -31,5 +31,11 @@ namespace Uso_Layouts
         {
             Navigation.PushAsync(new Paginas.FlexLayout());
         }
+
+        private void OnBoton5Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Paginas.AbsoluteLayout());
+        }
+
     }
 }
