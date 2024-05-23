@@ -46,6 +46,16 @@
             TextColor="Black"
             BackgroundColor="Beige"/>
 
+        <!-- Botón FlexLayout -->
+        <Button
+            x:Name="Boton4"
+            Text="FlexLayout" 
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnBoton4Clicked"
+            HorizontalOptions="Fill" 
+            TextColor="Black"
+            BackgroundColor="Beige"/>
+
         <!-- Botón AbsoluteLayout -->
         <Button
             x:Name="Boton5"
@@ -56,19 +66,7 @@
             TextColor="Black"
             BackgroundColor="Beige"/>
 
-
-            <!-- Botón FlexLayout -->
-            <Button
-            x:Name="Boton4"
-            Text="FlexLayout" 
-            SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnBoton4Clicked"
-            HorizontalOptions="Fill" 
-            TextColor="Black"
-            BackgroundColor="Beige"/>
-
-
-            <!-- Imagen -->
+        <!-- Imagen -->
         <Image
             Source="dotnet_bot.png"
             HeightRequest="185"
